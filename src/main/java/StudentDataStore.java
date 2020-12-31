@@ -32,5 +32,8 @@ public class StudentDataStore {
     {
         return (JSONObject) obj.get(key);
     }
-
+    public void delete(String key)
+    {
+        obj.remove(key);
+    }
 }
