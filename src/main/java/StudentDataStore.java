@@ -28,5 +28,9 @@ public class StudentDataStore {
 
     }
 
+    public JSONObject read(String key)
+    {
+        return (JSONObject) obj.get(key);
+    }
 
 }
