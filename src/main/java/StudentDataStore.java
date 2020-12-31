@@ -8,6 +8,7 @@ public class StudentDataStore {
     }
     public void insert()
     {
-        JSONObject json = new JSONObject();
+        JSONObject obj= new JSONObject();
+    //obj.put("country_name",detail.ge)
     }
 }
