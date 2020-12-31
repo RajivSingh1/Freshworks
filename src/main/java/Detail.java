@@ -4,35 +4,35 @@ public class Detail {
    private char region;
    private char language;
 
-    private String getCountryName() {
+  public String getCountryName() {
         return countryName;
     }
 
-    private void setCountryName(String countryName) {
+    public void setCountryName(String countryName) {
         this.countryName = countryName;
     }
 
-    private String getCountryCapital() {
+    public String getCountryCapital() {
         return countryCapital;
     }
 
-    private void setCountryCapital(String countryCapital) {
+    public void setCountryCapital(String countryCapital) {
         this.countryCapital = countryCapital;
     }
 
-    private char getRegion() {
+    public char getRegion() {
         return region;
     }
 
-    private void setRegion(char region) {
+    public void setRegion(char region) {
         this.region = region;
     }
 
-    private char getLanguage() {
+    public char getLanguage() {
         return language;
     }
 
-    private void setLanguage(char language) {
+    public void setLanguage(char language) {
         this.language = language;
     }
 }
