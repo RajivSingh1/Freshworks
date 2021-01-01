@@ -1,5 +1,7 @@
 import org.json.simple.JSONObject;
 
+import java.io.*;
+
 public class StudentDataStore {
     Detail detail;
 
@@ -7,7 +9,7 @@ public class StudentDataStore {
         this.detail = detail;
     }
     JSONObject obj = new JSONObject();
-    public void insert() {
+    public void insert() throws IOException {
 
         if (!obj.containsKey("country_name"))
             obj.put("country_name", detail.getCountryName());
@@ -25,7 +27,10 @@ public class StudentDataStore {
             obj.put("language", detail.getLanguage());
         else
             System.out.println("key will not be same");
-
+PrintWriter pw=new PrintWriter(new BufferedWriter(new FileWriter("res.txt",true)));
+pw.print(obj);
+        System.out.println("details added sucessfully");
+        pw.close();
     }
 
     public JSONObject read(String key)
