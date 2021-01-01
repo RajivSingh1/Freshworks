@@ -1,38 +1,38 @@
 public class Detail {
-    private String countryName;
-  private   String countryCapital;
-   private char region;
-   private char language;
+    private String firstName;
+  private   String secondName;
+   private String address;
+   private String language;
 
-  public String getCountryName() {
-        return countryName;
+  public String getFirstName() {
+        return firstName;
     }
 
-    public void setCountryName(String countryName) {
-        this.countryName = countryName;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getCountryCapital() {
-        return countryCapital;
+    public String getSecondName() {
+        return secondName;
     }
 
-    public void setCountryCapital(String countryCapital) {
-        this.countryCapital = countryCapital;
+    public void setSecondName(String secondName) {
+        this.secondName = secondName;
     }
 
-    public char getRegion() {
-        return region;
+    public String getAddress() {
+        return address;
     }
 
-    public void setRegion(char region) {
-        this.region = region;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
-    public char getLanguage() {
+    public String getLanguage() {
         return language;
     }
 
-    public void setLanguage(char language) {
+    public void setLanguage(String language) {
         this.language = language;
     }
 }
